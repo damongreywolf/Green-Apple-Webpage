@@ -1,6 +1,6 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update swaps in the Green Apple logo with the green splash background.
+This update makes the main hero logo larger so it visually balances with the headline text.
 
 Upload these three files to GitHub:
 - index.html
