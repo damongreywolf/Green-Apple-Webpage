@@ -1,11 +1,8 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes the main hero headline style.
-
-It makes:
-- "Bold gourmet sandwiches..." more playful and logo-like
-- "Green Apple" stand out in red/yellow to match the logo banner
-- The headline slightly smaller and cleaner inside the hero section
+This update switches the hero headline colors:
+- Main headline text is red/yellow/black like the logo banner
+- "Green Apple" is green/cream/black like the apple lettering
 
 Upload these three files to GitHub:
 - index.html
