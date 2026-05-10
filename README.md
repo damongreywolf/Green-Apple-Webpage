@@ -1,14 +1,11 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update uses:
-- The actual logo image in `images/green-apple-logo.png`
-- Baloo Bhai 2 font from Google Fonts
-- The simple static Vercel setup
+This version does not use an images folder.
 
-Upload these to GitHub:
+Upload these files to GitHub:
 - index.html
 - README.md
-- images/green-apple-logo.png
+- green-apple-logo.png
 
 Vercel settings:
 - Build Command: blank
