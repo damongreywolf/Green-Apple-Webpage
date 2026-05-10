@@ -1,6 +1,9 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update makes the main hero logo larger so it visually balances with the headline text.
+This update balances the hero section:
+- Keeps the logo contained inside the hero box
+- Reduces the left headline size
+- Moves the hero content closer to the top
 
 Upload these three files to GitHub:
 - index.html
