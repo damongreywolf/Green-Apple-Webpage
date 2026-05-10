@@ -1,15 +1,18 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update moves the whole hero area closer to the top by about one inch:
-- Logo box moves up
-- Main headline moves up
-- Hero copy and buttons move up
-- Current logo and headline styling stay the same
+This update changes the About the Truck section:
+- Adds the Ringgold sandwich-shop origin story
+- Adds three original Green Apple restaurant photos
+- Leaves one placeholder for Green Apple on the road
+- Changes the three value cards into story cards
 
-Upload these three files to GitHub:
+Upload these files to GitHub:
 - index.html
 - README.md
 - green-apple-logo.png
+- restaurant-sign.jpg
+- restaurant-dining-room.jpg
+- restaurant-kitchen.jpg
 
 Do not upload the ZIP itself.
 
