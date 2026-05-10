@@ -1,13 +1,15 @@
 # Green Apple Gourmet Sandwiches Website
 
-This version does not use an images folder.
+This update swaps in the correct Green Apple logo.
 
-Upload these files to GitHub:
+Upload these three files to GitHub:
 - index.html
 - README.md
 - green-apple-logo.png
 
-Vercel settings:
+Do not upload the ZIP itself.
+
+Vercel settings should stay:
 - Build Command: blank
 - Install Command: blank
 - Output Directory: .
