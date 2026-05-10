@@ -1,24 +1,17 @@
 # Green Apple Gourmet Sandwiches Website
 
-This is a simple static website. It does not use React, npm, Vite, Tailwind build files, or package.json.
+This update uses:
+- The actual logo image in `images/green-apple-logo.png`
+- Baloo Bhai 2 font from Google Fonts
+- The simple static Vercel setup
 
-## Files to upload to GitHub
-
-Upload these files only:
-
+Upload these to GitHub:
 - index.html
 - README.md
+- images/green-apple-logo.png
 
-## Local test
-
-Double-click index.html on your computer. It should open in your browser.
-
-## Vercel settings
-
-- Framework Preset: Other
-- Build Command: leave blank
-- Install Command: leave blank
-- Output Directory: leave blank or .
+Vercel settings:
+- Build Command: blank
+- Install Command: blank
+- Output Directory: .
 - Root Directory: blank/default
-
-If Vercel tries to install dependencies, delete any old package.json from GitHub.
