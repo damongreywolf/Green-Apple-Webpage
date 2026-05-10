@@ -1,14 +1,8 @@
 # Green Apple Gourmet Sandwiches Website
 
-Fresh rebuild with the Social section updated.
-
-Facebook page:
-https://www.facebook.com/thegreenappleringgoldgeorgia
-
-Social section now includes:
-- Latest Updates card
-- Customer message about route changes, weather notices, sell-outs, pop-ups, and specials
-- View Facebook Updates button linked to the real Facebook page
+This update changes the Green Apple Club description:
+- Replaces roasted turkey with savory roast beef
+- Changes mustard wording to spicy whole grain mustard
 
 Upload these files to GitHub:
 - index.html
@@ -20,7 +14,7 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-Vercel settings:
+Vercel settings should stay:
 - Build Command: blank
 - Install Command: blank
 - Output Directory: .
