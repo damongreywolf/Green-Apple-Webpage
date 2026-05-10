@@ -1,10 +1,9 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update keeps:
-- Black headline text with one red shadow
-
-And changes:
-- Green Apple back to green text with white and black shadow pop
+This update moves the hero section content up about a half inch:
+- Left headline moves up
+- Right logo box moves up
+- Current logo and headline styling stay the same
 
 Upload these three files to GitHub:
 - index.html
