@@ -1,6 +1,6 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update swaps in the correct Green Apple logo.
+This update swaps in the Green Apple logo with the green splash background.
 
 Upload these three files to GitHub:
 - index.html
