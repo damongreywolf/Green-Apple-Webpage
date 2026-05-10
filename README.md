@@ -1,6 +1,8 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update keeps "Green Apple" green and changes the rest of the hero headline to black.
+This update tests a single-shadow headline:
+- Black headline text with one red shadow
+- Green Apple stays green with one yellow shadow
 
 Upload these three files to GitHub:
 - index.html
