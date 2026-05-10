@@ -1,13 +1,15 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update links the Facebook buttons to the real Green Apple Facebook page:
+This update replaces the fake live-feed boxes with a clearer Facebook updates section.
 
+Linked Facebook page:
 https://www.facebook.com/thegreenappleringgoldgeorgia
 
 Updated:
-- Follow Facebook button
-- Footer Facebook link
-- Facebook schema/social placeholder when present
+- Social media section headline copy
+- Replaced Instagram Feed / Facebook Post / Weekly Special boxes
+- Added Latest Updates card
+- Added View Facebook Updates button
 
 Upload these files to GitHub:
 - index.html
