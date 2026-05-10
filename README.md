@@ -1,8 +1,9 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes the Green Apple Club description:
-- Replaces roasted turkey with savory roast beef
-- Changes mustard wording to spicy whole grain mustard
+This update changes Victoria’s Italian:
+- sliced salami becomes sliced Italian cotto salami
+- ham is replaced with pastrami
+- pepperoni is added
 
 Upload these files to GitHub:
 - index.html
