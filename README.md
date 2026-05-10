@@ -1,8 +1,6 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update switches the hero headline colors:
-- Main headline text is red/yellow/black like the logo banner
-- "Green Apple" is green/cream/black like the apple lettering
+This update keeps "Green Apple" green and changes the rest of the hero headline to black.
 
 Upload these three files to GitHub:
 - index.html
