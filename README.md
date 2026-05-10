@@ -1,8 +1,6 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes two menu items:
-- Uncle Victor’s Sassy Roast Beef description now starts with “Savory hot roast beef...”
-- “The Italian” is now renamed to “Victoria’s Italian”
+This update adds Friday and Weekend cards under the Weekly Route section.
 
 Upload these files to GitHub:
 - index.html
