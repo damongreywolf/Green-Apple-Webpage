@@ -1,9 +1,10 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update moves the hero section content up about a half inch:
-- Left headline moves up
-- Right logo box moves up
-- Current logo and headline styling stay the same
+This update changes the hero copy:
+- "Serving Catoosa County, GA + Hamilton County, TN"
+  to "Serving Northwest Georgia + Hamilton County, TN"
+- Replaces the smaller hero tagline with:
+  "Stacked high, served hot, and rolling fresh across Northwest Georgia and Hamilton County."
 
 Upload these three files to GitHub:
 - index.html
