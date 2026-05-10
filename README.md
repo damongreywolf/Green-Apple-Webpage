@@ -1,15 +1,14 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update replaces the fake live-feed boxes with a clearer Facebook updates section.
+Fresh rebuild with the Social section updated.
 
-Linked Facebook page:
+Facebook page:
 https://www.facebook.com/thegreenappleringgoldgeorgia
 
-Updated:
-- Social media section headline copy
-- Replaced Instagram Feed / Facebook Post / Weekly Special boxes
-- Added Latest Updates card
-- Added View Facebook Updates button
+Social section now includes:
+- Latest Updates card
+- Customer message about route changes, weather notices, sell-outs, pop-ups, and specials
+- View Facebook Updates button linked to the real Facebook page
 
 Upload these files to GitHub:
 - index.html
@@ -21,7 +20,7 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-Vercel settings should stay:
+Vercel settings:
 - Build Command: blank
 - Install Command: blank
 - Output Directory: .
