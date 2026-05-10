@@ -1,10 +1,8 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes the About the Truck section:
-- Adds the Ringgold sandwich-shop origin story
-- Adds three original Green Apple restaurant photos
-- Leaves one placeholder for Green Apple on the road
-- Changes the three value cards into story cards
+This update changes two menu items:
+- Uncle Victor’s Sassy Roast Beef description now starts with “Savory hot roast beef...”
+- “The Italian” is now renamed to “Victoria’s Italian”
 
 Upload these files to GitHub:
 - index.html
