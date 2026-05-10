@@ -1,8 +1,10 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update tests a single-shadow headline:
+This update keeps:
 - Black headline text with one red shadow
-- Green Apple stays green with one yellow shadow
+
+And changes:
+- Green Apple back to green text with white and black shadow pop
 
 Upload these three files to GitHub:
 - index.html
