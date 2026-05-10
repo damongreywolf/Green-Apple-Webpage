@@ -1,6 +1,13 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update adds Friday and Weekend cards under the Weekly Route section.
+This update links the Facebook buttons to the real Green Apple Facebook page:
+
+https://www.facebook.com/thegreenappleringgoldgeorgia
+
+Updated:
+- Follow Facebook button
+- Footer Facebook link
+- Facebook schema/social placeholder when present
 
 Upload these files to GitHub:
 - index.html
