@@ -1,12 +1,16 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update cleans up the Contact and Menu sections.
+This update connects the website forms to Formspree.
+
+Formspree endpoint:
+https://formspree.io/f/xgoddebl
 
 Changes:
-- Makes damontriplett@greenapplesandwiches.com clickable with a mailto link
-- Keeps the phone number placeholder for now
-- Removes route-alert SMS text if present
-- Replaces all TBD price labels with Pricing Coming Soon
+- Request a Quote form now submits to Formspree
+- Contact form now submits to Formspree
+- Both forms include hidden subject/form-type fields
+- Email remains damontriplett@greenapplesandwiches.com
+- Phone placeholder remains for now
 
 Upload these files to GitHub:
 - index.html
@@ -18,8 +22,5 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-Vercel settings should stay:
-- Build Command: blank
-- Install Command: blank
-- Output Directory: .
-- Root Directory: blank/default
+After uploading, test the forms on the live Vercel site.
+Formspree may ask you to confirm/activate the form after the first submission.
