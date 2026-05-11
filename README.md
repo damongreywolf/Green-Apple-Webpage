@@ -1,9 +1,8 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes the small logo at the top of the page:
-- Small header logo is clipped into an oval badge
-- Adds a black border and red shadow
-- Keeps the main hero logo unchanged
+This update removes two instruction-style paragraphs:
+- The paragraph under "Eight sandwiches built for the truck"
+- The paragraph under "Find us this week"
 
 Upload these files to GitHub:
 - index.html
