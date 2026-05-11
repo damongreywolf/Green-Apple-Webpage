@@ -1,8 +1,18 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update removes two instruction-style paragraphs:
-- The paragraph under "Eight sandwiches built for the truck"
-- The paragraph under "Find us this week"
+This update changes the Social/Facebook section.
+
+Facebook page:
+https://www.facebook.com/thegreenappleringgoldgeorgia
+
+Updated Social section:
+- One main Facebook button: View Facebook Updates
+- Temporary Instagram Coming Soon button
+- Temporary TikTok Coming Soon button
+- Three interactive-style cards:
+  - Today’s Route
+  - Weekly Specials
+  - Event Pop-Ups
 
 Upload these files to GitHub:
 - index.html
