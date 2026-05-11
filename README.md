@@ -1,10 +1,17 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update moves the Customer Reviews / Testimonials section.
+This update links Instagram.
 
-Changed:
-- Reviews section now appears after the Menu section
-- Reviews section no longer appears before the Menu section
+Instagram:
+https://instagram.com/greenapplesandwiches
+
+Facebook:
+https://www.facebook.com/thegreenappleringgoldgeorgia
+
+Updated:
+- Instagram button now links to the real Instagram page
+- Footer Instagram link now links to the real Instagram page
+- Placeholder Instagram references updated where present
 
 Upload these files to GitHub:
 - index.html
