@@ -1,9 +1,9 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes Victoria’s Italian:
-- sliced salami becomes sliced Italian cotto salami
-- ham is replaced with pastrami
-- pepperoni is added
+This update changes the small logo at the top of the page:
+- Small header logo is clipped into an oval badge
+- Adds a black border and red shadow
+- Keeps the main hero logo unchanged
 
 Upload these files to GitHub:
 - index.html
