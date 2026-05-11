@@ -1,16 +1,10 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update adds a Customer Reviews / Testimonials section after About the Truck.
+This update moves the Customer Reviews / Testimonials section.
 
-Facebook page:
-https://www.facebook.com/thegreenappleringgoldgeorgia
-
-New section includes:
-- Loved in Ringgold.
-- 98% recommended
-- 37 Facebook reviews
-- Three customer quote cards
-- Read More Reviews on Facebook button
+Changed:
+- Reviews section now appears after the Menu section
+- Reviews section no longer appears before the Menu section
 
 Upload these files to GitHub:
 - index.html
