@@ -1,11 +1,16 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update removes the visible SEO + Local Optimization section from the webpage.
+This update adds a Customer Reviews / Testimonials section after About the Truck.
 
-The customer-facing page no longer shows:
-- SEO + local optimization
-- Built for local food truck searches
-- Meta description / Image placement / Newsletter-SMS planning notes
+Facebook page:
+https://www.facebook.com/thegreenappleringgoldgeorgia
+
+New section includes:
+- Loved in Ringgold.
+- 98% recommended
+- 37 Facebook reviews
+- Three customer quote cards
+- Read More Reviews on Facebook button
 
 Upload these files to GitHub:
 - index.html
