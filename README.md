@@ -1,13 +1,11 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update removes the TikTok Coming Soon button from the Social section.
+This update removes the visible SEO + Local Optimization section from the webpage.
 
-Social section keeps:
-- View Facebook Updates
-- Instagram Coming Soon
-- Today’s Route card
-- Weekly Specials card
-- Event Pop-Ups card
+The customer-facing page no longer shows:
+- SEO + local optimization
+- Built for local food truck searches
+- Meta description / Image placement / Newsletter-SMS planning notes
 
 Upload these files to GitHub:
 - index.html
