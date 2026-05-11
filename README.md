@@ -1,11 +1,12 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update removes the dates from the customer review cards.
+This update cleans up the Contact and Menu sections.
 
-Changed:
-- Review cards still show reviewer names
-- Review cards still say Facebook review
-- Dates have been removed
+Changes:
+- Makes damontriplett@greenapplesandwiches.com clickable with a mailto link
+- Keeps the phone number placeholder for now
+- Removes route-alert SMS text if present
+- Replaces all TBD price labels with Pricing Coming Soon
 
 Upload these files to GitHub:
 - index.html
