@@ -1,17 +1,11 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update links Instagram.
+This update removes the dates from the customer review cards.
 
-Instagram:
-https://instagram.com/greenapplesandwiches
-
-Facebook:
-https://www.facebook.com/thegreenappleringgoldgeorgia
-
-Updated:
-- Instagram button now links to the real Instagram page
-- Footer Instagram link now links to the real Instagram page
-- Placeholder Instagram references updated where present
+Changed:
+- Review cards still show reviewer names
+- Review cards still say Facebook review
+- Dates have been removed
 
 Upload these files to GitHub:
 - index.html
