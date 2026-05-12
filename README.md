@@ -1,10 +1,13 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes the hero logo treatment:
-- Removes remaining square/frame styling around the hero logo
-- No border, no panel, no rounded rectangle, no red box shadow
-- Logo sits directly on the hero splash background
-- Keeps favicon and working forms when present
+This update adds a favicon.
+
+New files:
+- favicon.ico
+- favicon.png
+
+Updated:
+- index.html now points browsers to the favicon files.
 
 Upload these files to GitHub:
 - index.html
@@ -18,4 +21,4 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-After Vercel redeploys, hard refresh with Ctrl+F5 if the old hero still appears.
+After Vercel redeploys, the browser tab should show the Green Apple icon. You may need to hard refresh or open an incognito window because favicons can cache strongly.
