@@ -1,11 +1,10 @@
 # Green Apple Gourmet Sandwiches Website
 
 This update changes the hero logo treatment:
-- Removes the square hero box
-- Removes the logo-as-background/watermark effect
-- Brings the logo forward as a visible image
-- Keeps the logo unboxed with a lighter drop-shadow effect
-- Keeps favicon and form setup when present
+- Removes remaining square/frame styling around the hero logo
+- No border, no panel, no rounded rectangle, no red box shadow
+- Logo sits directly on the hero splash background
+- Keeps favicon and working forms when present
 
 Upload these files to GitHub:
 - index.html
