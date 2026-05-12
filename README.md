@@ -1,24 +1,24 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update connects both website forms to Formspree.
+This update adds a favicon.
 
-Formspree endpoint:
-https://formspree.io/f/xgoddebl
+New files:
+- favicon.ico
+- favicon.png
 
-Forms connected:
-- Request a Quote / Event Inquiry
-- General Contact Message
+Updated:
+- index.html now points browsers to the favicon files.
 
-Important:
-- Upload all listed files to GitHub.
-- After Vercel redeploys, test from the live website, not from an old preview.
-- Fill required fields before submitting.
-- Formspree may require first-submission confirmation in your Formspree account.
-
-Upload these files:
+Upload these files to GitHub:
 - index.html
 - README.md
 - green-apple-logo.png
 - restaurant-sign.jpg
 - restaurant-dining-room.jpg
 - restaurant-kitchen.jpg
+- favicon.ico
+- favicon.png
+
+Do not upload the ZIP itself.
+
+After Vercel redeploys, the browser tab should show the Green Apple icon. You may need to hard refresh or open an incognito window because favicons can cache strongly.
