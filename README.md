@@ -1,13 +1,10 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update adds a favicon.
-
-New files:
-- favicon.ico
-- favicon.png
-
-Updated:
-- index.html now points browsers to the favicon files.
+This update changes the hero design:
+- Removes the square logo box from the right side
+- Uses the Green Apple logo as a large background/watermark inside the hero section
+- Keeps the text readable with a soft cream overlay
+- Keeps the current favicon and form setup when present
 
 Upload these files to GitHub:
 - index.html
@@ -21,4 +18,4 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-After Vercel redeploys, the browser tab should show the Green Apple icon. You may need to hard refresh or open an incognito window because favicons can cache strongly.
+After Vercel redeploys, hard refresh with Ctrl+F5 if the old hero still appears.
