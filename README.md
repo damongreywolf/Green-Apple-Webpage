@@ -1,17 +1,7 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update improves mobile readability and button clarity based on feedback.
-
-Changes:
-- Hero buttons now use parallel action labels:
-  - View Menu
-  - Find the Truck
-  - Book Us
-- Mobile text shadows are reduced/removed for easier reading
-- Buttons are slightly larger and easier to tap on phones
-- Mobile spacing/padding is improved
-- Informational cards are visually calmer so buttons stand out better
-- Existing favicon, images, and working Formspree forms are preserved when present
+This update changes the menu item name:
+- Santa Fe Chicken Wrap is now The Santa Fe
 
 Upload these files to GitHub:
 - index.html
@@ -25,4 +15,4 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-After Vercel redeploys, hard refresh with Ctrl+F5 and check the site on your phone.
+After Vercel redeploys, check the Menu section on desktop and mobile.
