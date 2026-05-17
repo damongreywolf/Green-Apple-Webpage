@@ -1,7 +1,7 @@
 # Green Apple Gourmet Sandwiches Website
 
 This update changes the menu item name:
-- Santa Fe Chicken Wrap is now The Santa Fe
+- The Santa Fe is now Santa Fe
 
 Upload these files to GitHub:
 - index.html
@@ -15,4 +15,4 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-After Vercel redeploys, check the Menu section on desktop and mobile.
+After Vercel redeploys, check the Menu section on mobile.
