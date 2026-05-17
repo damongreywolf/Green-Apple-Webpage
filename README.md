@@ -1,7 +1,13 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update changes the menu item name:
-- The Santa Fe is now Santa Fe
+This update restores the original-style hero logo box.
+
+Changes:
+- Puts the logo back inside a hero box
+- Restores cream background, black border, rounded corners, and red shadow
+- Keeps the current Santa Fe name update
+- Keeps mobile readability improvements
+- Keeps favicon and working Formspree forms when present
 
 Upload these files to GitHub:
 - index.html
@@ -15,4 +21,4 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-After Vercel redeploys, check the Menu section on mobile.
+After Vercel redeploys, hard refresh with Ctrl+F5 and check mobile.
