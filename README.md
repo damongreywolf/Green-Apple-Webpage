@@ -1,13 +1,17 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update adds a favicon.
+This update improves mobile readability and button clarity based on feedback.
 
-New files:
-- favicon.ico
-- favicon.png
-
-Updated:
-- index.html now points browsers to the favicon files.
+Changes:
+- Hero buttons now use parallel action labels:
+  - View Menu
+  - Find the Truck
+  - Book Us
+- Mobile text shadows are reduced/removed for easier reading
+- Buttons are slightly larger and easier to tap on phones
+- Mobile spacing/padding is improved
+- Informational cards are visually calmer so buttons stand out better
+- Existing favicon, images, and working Formspree forms are preserved when present
 
 Upload these files to GitHub:
 - index.html
@@ -21,4 +25,4 @@ Upload these files to GitHub:
 
 Do not upload the ZIP itself.
 
-After Vercel redeploys, the browser tab should show the Green Apple icon. You may need to hard refresh or open an incognito window because favicons can cache strongly.
+After Vercel redeploys, hard refresh with Ctrl+F5 and check the site on your phone.
