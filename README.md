@@ -1,12 +1,20 @@
 # Green Apple Gourmet Sandwiches Website
 
-This update adds the old-photo gallery to the Restaurant Roots section.
+This update adds the missing old kitchen/prep photo to the View More Old Photos gallery.
 
 Changes:
-- Keeps the existing four main Restaurant Roots photo boxes in place
-- Makes the existing Restaurant Roots photos enlarge when clicked/tapped
-- Adds a small "View More Old Photos" button
-- Adds The Green Apple Archives gallery with old restaurant photos
-- Gallery photos open in a mobile/desktop lightbox
+- Adds the missing prep line / slicer / kitchen setup photo
+- Keeps the visible "Tap to enlarge" text removed
+- Keeps click/tap-to-enlarge behavior
+- Keeps the four main Restaurant Roots boxes unchanged
+- Keeps the View More Old Photos archive gallery
 
-Upload all files in this ZIP to GitHub. Do not upload the ZIP itself.
+Upload these files to GitHub:
+- index.html
+- README.md
+- all .jpg images included in this ZIP
+- favicon.ico
+- favicon.png
+- green-apple-logo.png
+
+After Vercel redeploys, hard refresh with Ctrl+F5 and test the photo gallery.

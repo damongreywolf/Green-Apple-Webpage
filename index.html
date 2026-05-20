@@ -108,7 +108,7 @@
 
 
 /* Click-to-enlarge photo gallery */
-.photo-clickable{cursor:pointer;position:relative}.photo-clickable::after{content:"Tap to enlarge";position:absolute;left:12px;bottom:12px;background:rgba(23,34,12,.88);color:white;border:2px solid #111;border-radius:999px;padding:6px 10px;font-size:.72rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase;opacity:.92}.archive-actions{display:flex;justify-content:center;margin-top:26px}.archive-btn{appearance:none;border:3px solid var(--ink);background:var(--cream);color:#3f760f;border-radius:999px;padding:13px 20px;font-weight:1000;text-transform:uppercase;letter-spacing:.05em;box-shadow:5px 5px 0 var(--yellow);cursor:pointer}.archive-btn:hover{transform:translateY(-2px);box-shadow:7px 7px 0 var(--red)}.archive-panel{display:none;margin-top:28px;border:4px solid var(--ink);border-radius:28px;background:rgba(255,247,214,.96);padding:22px;box-shadow:10px 10px 0 var(--red)}.archive-panel.open{display:block}.archive-panel h3{margin:0 0 8px;font-size:clamp(1.8rem,4vw,3rem);color:#3f760f}.archive-panel p{margin:0 0 18px}.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.archive-photo{border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:white;box-shadow:5px 5px 0 var(--yellow);cursor:pointer}.archive-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}.archive-photo figcaption{padding:10px;font-weight:900;font-size:.86rem;color:#345f10;line-height:1.25}.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:9999;background:rgba(0,0,0,.82);padding:18px}.lightbox.open{display:flex}.lightbox-inner{position:relative;max-width:min(1040px,94vw);max-height:92vh;border:4px solid var(--ink);border-radius:26px;background:var(--cream);padding:12px;box-shadow:12px 12px 0 var(--red)}.lightbox img{display:block;width:100%;max-height:76vh;object-fit:contain;border-radius:18px}.lightbox-caption{margin:10px 56px 0 4px;color:#3f760f;font-weight:1000;line-height:1.25}.lightbox-close{position:absolute;right:14px;top:14px;border:2px solid var(--ink);border-radius:999px;background:var(--red);color:var(--yellow);padding:8px 12px;font-weight:1000;cursor:pointer;box-shadow:4px 4px 0 var(--ink)}@media(max-width:760px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.archive-panel{padding:16px;border-radius:22px}.archive-photo figcaption{font-size:.78rem}.photo-clickable::after{font-size:.66rem;left:8px;bottom:8px}}@media(max-width:460px){.archive-grid{grid-template-columns:1fr}}
+.photo-clickable{cursor:pointer;position:relative}.photo-clickable::after{content:none!important;display:none!important}.archive-actions{display:flex;justify-content:center;margin-top:26px}.archive-btn{appearance:none;border:3px solid var(--ink);background:var(--cream);color:#3f760f;border-radius:999px;padding:13px 20px;font-weight:1000;text-transform:uppercase;letter-spacing:.05em;box-shadow:5px 5px 0 var(--yellow);cursor:pointer}.archive-btn:hover{transform:translateY(-2px);box-shadow:7px 7px 0 var(--red)}.archive-panel{display:none;margin-top:28px;border:4px solid var(--ink);border-radius:28px;background:rgba(255,247,214,.96);padding:22px;box-shadow:10px 10px 0 var(--red)}.archive-panel.open{display:block}.archive-panel h3{margin:0 0 8px;font-size:clamp(1.8rem,4vw,3rem);color:#3f760f}.archive-panel p{margin:0 0 18px}.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.archive-photo{border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:white;box-shadow:5px 5px 0 var(--yellow);cursor:pointer}.archive-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}.archive-photo figcaption{padding:10px;font-weight:900;font-size:.86rem;color:#345f10;line-height:1.25}.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:9999;background:rgba(0,0,0,.82);padding:18px}.lightbox.open{display:flex}.lightbox-inner{position:relative;max-width:min(1040px,94vw);max-height:92vh;border:4px solid var(--ink);border-radius:26px;background:var(--cream);padding:12px;box-shadow:12px 12px 0 var(--red)}.lightbox img{display:block;width:100%;max-height:76vh;object-fit:contain;border-radius:18px}.lightbox-caption{margin:10px 56px 0 4px;color:#3f760f;font-weight:1000;line-height:1.25}.lightbox-close{position:absolute;right:14px;top:14px;border:2px solid var(--ink);border-radius:999px;background:var(--red);color:var(--yellow);padding:8px 12px;font-weight:1000;cursor:pointer;box-shadow:4px 4px 0 var(--ink)}@media(max-width:760px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.archive-panel{padding:16px;border-radius:22px}.archive-photo figcaption{font-size:.78rem}.photo-clickable::after{content:none!important;display:none!important}}@media(max-width:460px){.archive-grid{grid-template-columns:1fr}}
 
 </style>
 </head>
@@ -118,24 +118,84 @@
 <main>
 <section id="home" class="hero splash"><div class="wrap hero-grid"><div><p class="eyebrow">Serving Northwest Georgia + Hamilton County, TN</p><h1 class="hero-title">Bold gourmet sandwiches with a <span class="accent">Green Apple</span> twist.</h1><p class="lead">Stacked high, served hot, and rolling fresh across Northwest Georgia and Hamilton County.</p><div class="buttons"><a class="btn yellow" href="#menu">View Menu</a><a class="btn green" href="#route">Find the Truck</a><a class="btn red" href="#book">Book Us</a></div></div><div class="logo-frame"><img class="logo-hero" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"></div></div></section>
 <section id="about"><div class="wrap about-grid"><div class="photo-grid"><div class="photo photo-image"><div><img src="restaurant-sign.jpg" alt="Original Green Apple restaurant sign in Ringgold, Georgia" data-lightbox-src="restaurant-sign.jpg" data-lightbox-caption="Original Ringgold Shop"><span class="caption">Original Ringgold shop</span></div></div><div class="photo photo-image"><div><img src="restaurant-dining-room.jpg" alt="Inside the original Green Apple dining room with the community gathered" data-lightbox-src="restaurant-dining-room.jpg" data-lightbox-caption="Inside the dining room"><span class="caption">Inside the dining room</span></div></div><div class="photo photo-image"><div><img src="restaurant-kitchen.jpg" alt="Inside the original Green Apple kitchen" data-lightbox-src="restaurant-kitchen.jpg" data-lightbox-caption="Inside the kitchen"><span class="caption">Inside the kitchen</span></div></div><div class="photo"><div>Photo coming soon:<br>Green Apple on the road</div></div></div><div><div class="heading"><p class="label">About the truck</p><h2>Restaurant roots. Road-ready flavor.</h2><p>Before it was a food truck, Green Apple was a sandwich shop in Ringgold, Georgia — a local spot built on fresh ingredients, warm toasted sandwiches, and flavor combinations people remembered. Now we’re taking those restaurant roots on the road, serving bold gourmet sandwiches across Northwest Georgia and Hamilton County with the same Green Apple twist.</p></div><div class="values"><div class="value"><strong>Born in Ringgold</strong><br><span>From a local sandwich shop to a rolling food truck.</span></div><div class="value"><strong>Signature Sandwiches</strong><br><span>Built around warm meats, crisp toppings, melted cheese, and bold sauces.</span></div><div class="value"><strong>Serving the Community</strong><br><span>Bringing Green Apple flavor to local lunches, events, schools, and festivals.</span></div></div></div></div>
-<div class="archive-actions"><button class="archive-btn" type="button" id="toggle-archive">View More Old Photos</button></div><div class="archive-panel" id="green-apple-archives"><h3>The Green Apple Archives</h3><p>Photos from the original Green Apple restaurant in Ringgold — the menu, the food, the kitchen, the family, and the community moments that started the story.</p><div class="archive-grid"><figure class="archive-photo" data-lightbox-src="old-menu-page-1.jpg" data-lightbox-caption="Original Green Apple menu, page 1"><img src="old-menu-page-1.jpg" alt="Original Green Apple menu, page 1"><figcaption>Original Green Apple menu, page 1</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-menu-page-2.jpg" data-lightbox-caption="Original Green Apple menu, page 2"><img src="old-menu-page-2.jpg" alt="Original Green Apple menu, page 2"><figcaption>Original Green Apple menu, page 2</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-sandwich-potato-salad.jpg" data-lightbox-caption="Original sandwich and house-made potato salad"><img src="old-sandwich-potato-salad.jpg" alt="Original sandwich and house-made potato salad"><figcaption>Original sandwich and house-made potato salad</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-best-of-the-best.jpg" data-lightbox-caption="Best of the Best recognition"><img src="old-best-of-the-best.jpg" alt="Best of the Best recognition"><figcaption>Best of the Best recognition</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-yelp-feature.jpg" data-lightbox-caption="Weekly Yelp feature"><img src="old-yelp-feature.jpg" alt="Weekly Yelp feature"><figcaption>Weekly Yelp feature</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-ribbon-cutting.jpg" data-lightbox-caption="Ribbon cutting at the original restaurant"><img src="old-ribbon-cutting.jpg" alt="Ribbon cutting at the original restaurant"><figcaption>Ribbon cutting at the original restaurant</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-family-staff-group.jpg" data-lightbox-caption="Original Green Apple family and staff"><img src="old-family-staff-group.jpg" alt="Original Green Apple family and staff"><figcaption>Original Green Apple family and staff</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-dining-room-tree.jpg" data-lightbox-caption="Dining room and apple tree"><img src="old-dining-room-tree.jpg" alt="Dining room and apple tree"><figcaption>Dining room and apple tree</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-dining-room-floor.jpg" data-lightbox-caption="Dining room floor logo"><img src="old-dining-room-floor.jpg" alt="Dining room floor logo"><figcaption>Dining room floor logo</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-baby-floor-logo.jpg" data-lightbox-caption="Green Apple floor logo memory"><img src="old-baby-floor-logo.jpg" alt="Green Apple floor logo memory"><figcaption>Green Apple floor logo memory</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-kitchen-refrigeration.jpg" data-lightbox-caption="Kitchen refrigeration and equipment"><img src="old-kitchen-refrigeration.jpg" alt="Kitchen refrigeration and equipment"><figcaption>Kitchen refrigeration and equipment</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-kitchen-equipment.jpg" data-lightbox-caption="Original kitchen equipment"><img src="old-kitchen-equipment.jpg" alt="Original kitchen equipment"><figcaption>Original kitchen equipment</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-prep-line.jpg" data-lightbox-caption="Prep line and slicer"><img src="old-prep-line.jpg" alt="Prep line and slicer"><figcaption>Prep line and slicer</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-kitchen-crew.jpg" data-lightbox-caption="Kitchen crew behind the scenes"><img src="old-kitchen-crew.jpg" alt="Kitchen crew behind the scenes"><figcaption>Kitchen crew behind the scenes</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-road-sign.jpg" data-lightbox-caption="Original roadside sign"><img src="old-road-sign.jpg" alt="Original roadside sign"><figcaption>Original roadside sign</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-family-dining-1.jpg" data-lightbox-caption="Family dining at the original restaurant"><img src="old-family-dining-1.jpg" alt="Family dining at the original restaurant"><figcaption>Family dining at the original restaurant</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-family-dining-2.jpg" data-lightbox-caption="Family meal at the original restaurant"><img src="old-family-dining-2.jpg" alt="Family meal at the original restaurant"><figcaption>Family meal at the original restaurant</figcaption></figure>
-<figure class="archive-photo" data-lightbox-src="old-counter-memory.jpg" data-lightbox-caption="Front counter memory"><img src="old-counter-memory.jpg" alt="Front counter memory"><figcaption>Front counter memory</figcaption></figure></div></div>
+<div class="archive-actions"><button class="archive-btn" type="button" id="toggle-archive">View More Old Photos</button></div><div class="archive-panel" id="green-apple-archives">
+  <h3>The Green Apple Archives</h3>
+  <p>Photos from the original Green Apple restaurant in Ringgold — the menu, the food, the kitchen, the family, and the community moments that started the story.</p>
+  <div class="archive-grid">
+    <figure class="archive-photo" data-lightbox-src="old-menu-page-1.jpg" data-lightbox-caption="Original Green Apple menu, page 1">
+      <img src="old-menu-page-1.jpg" alt="Original Green Apple menu, page 1">
+      <figcaption>Original Green Apple menu, page 1</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-menu-page-2.jpg" data-lightbox-caption="Original Green Apple menu, page 2">
+      <img src="old-menu-page-2.jpg" alt="Original Green Apple menu, page 2">
+      <figcaption>Original Green Apple menu, page 2</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-sandwich-potato-salad.jpg" data-lightbox-caption="Original sandwich and house-made potato salad">
+      <img src="old-sandwich-potato-salad.jpg" alt="Original sandwich and house-made potato salad">
+      <figcaption>Original sandwich and house-made potato salad</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-best-of-the-best.jpg" data-lightbox-caption="Best of the Best recognition">
+      <img src="old-best-of-the-best.jpg" alt="Best of the Best recognition">
+      <figcaption>Best of the Best recognition</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-yelp-feature.jpg" data-lightbox-caption="Weekly Yelp feature">
+      <img src="old-yelp-feature.jpg" alt="Weekly Yelp feature">
+      <figcaption>Weekly Yelp feature</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-ribbon-cutting.jpg" data-lightbox-caption="Ribbon cutting at the original restaurant">
+      <img src="old-ribbon-cutting.jpg" alt="Ribbon cutting at the original restaurant">
+      <figcaption>Ribbon cutting at the original restaurant</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-family-staff-group.jpg" data-lightbox-caption="Original Green Apple family and staff">
+      <img src="old-family-staff-group.jpg" alt="Original Green Apple family and staff">
+      <figcaption>Original Green Apple family and staff</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-dining-room-tree.jpg" data-lightbox-caption="Dining room and apple tree">
+      <img src="old-dining-room-tree.jpg" alt="Dining room and apple tree">
+      <figcaption>Dining room and apple tree</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-dining-room-floor.jpg" data-lightbox-caption="Dining room floor logo">
+      <img src="old-dining-room-floor.jpg" alt="Dining room floor logo">
+      <figcaption>Dining room floor logo</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-baby-floor-logo.jpg" data-lightbox-caption="Green Apple floor logo memory">
+      <img src="old-baby-floor-logo.jpg" alt="Green Apple floor logo memory">
+      <figcaption>Green Apple floor logo memory</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-kitchen-refrigeration.jpg" data-lightbox-caption="Kitchen refrigeration and equipment">
+      <img src="old-kitchen-refrigeration.jpg" alt="Kitchen refrigeration and equipment">
+      <figcaption>Kitchen refrigeration and equipment</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-restaurant-buildout.jpg" data-lightbox-caption="Restaurant buildout and floor logo">
+      <img src="old-restaurant-buildout.jpg" alt="Restaurant buildout and floor logo">
+      <figcaption>Restaurant buildout and floor logo</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-prep-line-full.jpg" data-lightbox-caption="Prep line, slicer, and original kitchen setup">
+      <img src="old-prep-line-full.jpg" alt="Prep line, slicer, and original kitchen setup">
+      <figcaption>Prep line, slicer, and original kitchen setup</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-kitchen-crew.jpg" data-lightbox-caption="Kitchen crew behind the scenes">
+      <img src="old-kitchen-crew.jpg" alt="Kitchen crew behind the scenes">
+      <figcaption>Kitchen crew behind the scenes</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-road-sign.jpg" data-lightbox-caption="Original roadside sign">
+      <img src="old-road-sign.jpg" alt="Original roadside sign">
+      <figcaption>Original roadside sign</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-family-dining-1.jpg" data-lightbox-caption="Family dining at the original restaurant">
+      <img src="old-family-dining-1.jpg" alt="Family dining at the original restaurant">
+      <figcaption>Family dining at the original restaurant</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-family-dining-2.jpg" data-lightbox-caption="Family meal at the original restaurant">
+      <img src="old-family-dining-2.jpg" alt="Family meal at the original restaurant">
+      <figcaption>Family meal at the original restaurant</figcaption>
+    </figure>
+<figure class="archive-photo" data-lightbox-src="old-counter-memory.jpg" data-lightbox-caption="Front counter memory">
+      <img src="old-counter-memory.jpg" alt="Front counter memory">
+      <figcaption>Front counter memory</figcaption>
+    </figure>
+  </div>
+</div>
 </section>
 <section id="menu" class="white"><div class="wrap"><div class="heading"><p class="label">Menu</p><h2>Eight sandwiches built for the truck.</h2></div><h3 class="cat">Signature Sandwiches</h3><div class="menu-grid">
 <article class="card"><div class="food"><div><div class="icon">🥪</div><p>Food photo</p></div></div><div class="body"><div class="top"><h3>The Green Apple</h3><span class="price">Pricing Coming Soon</span></div><p class="desc">Warm, tender turkey paired with applewood smoked bacon, fresh green apple slices, melted smoked gouda, and sautéed red onions, finished with smooth cream cheese on toasted sourdough.</p><span class="badge">Signature</span></div></article>
