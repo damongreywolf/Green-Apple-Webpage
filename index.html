@@ -124,128 +124,22 @@
 }
 
 
-.social-buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  justify-content:center;
-  align-items:center;
-  margin:18px auto 4px;
-}
-.social-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  font-weight:900;
-  color:var(--ink);
-  background:var(--yellow);
-  border:4px solid var(--ink);
-  border-radius:999px;
-  padding:11px 18px;
-  box-shadow:4px 4px 0 rgba(0,0,0,.18);
-  transition:transform .15s ease, box-shadow .15s ease;
-}
-.social-btn:hover{
-  transform:translateY(-2px);
-  box-shadow:6px 6px 0 rgba(0,0,0,.2);
-}
-.social-btn.secondary{
-  background:#fff;
-}
-@media (max-width:640px){
-  .social-buttons{
-    margin-top:14px;
-    gap:10px;
-  }
-  .social-btn{
-    width:100%;
-    max-width:280px;
-    padding:10px 14px;
-  }
-}
-
-
-/* Corrected mobile-only social/logo layout */
-.mobile-top-social-buttons,
-.mobile-hero-logo-under-badge{
-  display:none;
-}
-@media (max-width:640px){
-  .mobile-hide-top-book{
-    display:none !important;
-  }
-  .mobile-top-social-buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    flex-wrap:wrap;
-    margin:12px auto 4px;
-    padding:0 12px;
-  }
-  .mobile-social-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    font-weight:900;
-    color:var(--ink);
-    background:var(--yellow);
-    border:4px solid var(--ink);
-    border-radius:999px;
-    padding:10px 14px;
-    min-width:142px;
-    box-shadow:4px 4px 0 rgba(0,0,0,.18);
-    font-size:.95rem;
-  }
-  .mobile-social-btn-secondary{
-    background:#fff;
-  }
-  .mobile-hero-logo-under-badge{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:12px auto 8px;
-    padding:0 12px;
-  }
-  .mobile-hero-logo-under-badge img{
-    width:min(82vw, 310px);
-    max-height:190px;
-    object-fit:contain;
-    display:block;
-  }
-  /* Hide the original lower logo/card on mobile only after moving a copy under the serving badge */
-  .hero-logo,
-  .logo-card,
-  .brand-card,
-  .hero .logo,
-  .hero img[alt*="logo" i]{
-    display:none !important;
-  }
-  .mobile-hero-logo-under-badge img{
-    display:block !important;
-  }
-}
+.header-social-links{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.header-social-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:900;color:#fff;border:3px solid var(--ink);border-radius:999px;padding:9px 14px;box-shadow:3px 3px 0 rgba(0,0,0,.18);white-space:nowrap}
+.header-social-link.facebook{background:var(--red)}
+.header-social-link.instagram{background:var(--green)}
+@media (max-width:640px){.header-social-links{width:100%;gap:8px;margin-top:8px}.header-social-link{flex:1 1 135px;max-width:180px;padding:9px 10px;font-size:.92rem}}
 
 </style>
 </head>
 <body>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodTruck","name":"Green Apple Gourmet Sandwiches","servesCuisine":["Gourmet Sandwiches","American","Food Truck"],"areaServed":["Ringgold","Fort Oglethorpe","Catoosa County","Chattanooga","East Ridge","Ooltewah","Red Bank","Hamilton County"]}</script>
-<header><nav class="wrap"><a href="#home" class="brand"><img class="logo-header" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"><span>Green Apple</span></a><div class="links"><a href="#menu">Menu</a><a href="#route">Route</a><a href="#catering">Catering</a><a href="#social">Social</a><a href="#contact">Contact</a></div><a class="mobile-hide-top-book" class="btn red" href="#book">Book Us</a></nav>
-
-<div class="mobile-top-social-buttons" aria-label="Green Apple social media links">
-  <a class="mobile-social-btn" href="https://www.facebook.com/thegreenappleringgoldgeorgia" target="_blank" rel="noopener">Connect on Facebook</a>
-  <a class="mobile-social-btn mobile-social-btn-secondary" href="https://instagram.com/greenapplesandwiches" target="_blank" rel="noopener">Connect on Instagram</a>
-</div>
-
-</header>
+<header><nav class="wrap"><a href="#home" class="brand"><img class="logo-header" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"><span>Green Apple</span></a><div class="links"><a href="#menu">Menu</a><a href="#route">Route</a><a href="#catering">Catering</a><a href="#social">Social</a><a href="#contact">Contact</a></div><div class="header-social-links" aria-label="Green Apple social links">
+  <a class="header-social-link facebook" href="https://www.facebook.com/thegreenappleringgoldgeorgia" target="_blank" rel="noopener">Facebook</a>
+  <a class="header-social-link instagram" href="https://instagram.com/greenapplesandwiches" target="_blank" rel="noopener">Instagram</a>
+</div></nav></header>
 <main>
-<section id="home" class="hero splash"><div class="wrap hero-grid"><div><p class="eyebrow">Serving Northwest Georgia + Hamilton County, TN</p>
-<div class="mobile-hero-logo-under-badge">
-  <img src="green-apple-logo.png" alt="Green Apple Sandwiches logo">
-</div>
-<h1 class="hero-title">Bold gourmet sandwiches with a <span class="accent">Green Apple</span> twist.</h1><p class="lead">Stacked high, served hot, and rolling fresh across Northwest Georgia and Hamilton County.</p><div class="buttons"><a class="btn yellow" href="#menu">View Menu</a><a class="btn green" href="#route">Find the Truck</a><a class="btn red" href="#book">Book Us</a></div></div><div class="logo-frame"><img class="logo-hero" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"></div></div></section>
+<section id="home" class="hero splash"><div class="wrap hero-grid"><div><p class="eyebrow">Serving Northwest Georgia + Hamilton County, TN</p><h1 class="hero-title">Bold gourmet sandwiches with a <span class="accent">Green Apple</span> twist.</h1><p class="lead">Stacked high, served hot, and rolling fresh across Northwest Georgia and Hamilton County.</p><div class="buttons"><a class="btn yellow" href="#menu">View Menu</a><a class="btn green" href="#route">Find the Truck</a><a class="btn red" href="#book">Book Us</a></div></div><div class="logo-frame"><img class="logo-hero" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"></div></div></section>
 <section id="about"><div class="wrap about-grid"><div class="photo-grid"><div class="photo photo-image"><div><img src="restaurant-sign.jpg" alt="Original Green Apple restaurant sign in Ringgold, Georgia" data-lightbox-src="restaurant-sign.jpg" data-lightbox-caption="Original Ringgold Shop"><span class="caption">Original Ringgold shop</span></div></div><div class="photo photo-image"><div><img src="restaurant-dining-room.jpg" alt="Inside the original Green Apple dining room with the community gathered" data-lightbox-src="restaurant-dining-room.jpg" data-lightbox-caption="Inside the dining room"><span class="caption">Inside the dining room</span></div></div><div class="photo photo-image"><div><img src="restaurant-kitchen.jpg" alt="Inside the original Green Apple kitchen" data-lightbox-src="restaurant-kitchen.jpg" data-lightbox-caption="Inside the kitchen"><span class="caption">Inside the kitchen</span></div></div><div class="photo"><div>Photo coming soon:<br>Green Apple on the road</div></div></div><div><div class="heading"><p class="label">About the truck</p><h2>Restaurant roots. Road-ready flavor.</h2><p>Before it was a food truck, Green Apple was a sandwich shop in Ringgold, Georgia — a local spot built on fresh ingredients, warm toasted sandwiches, and flavor combinations people remembered. Now we’re taking those restaurant roots on the road, serving bold gourmet sandwiches across Northwest Georgia and Hamilton County with the same Green Apple twist.</p></div><div class="values"><div class="value"><strong>Born in Ringgold</strong><br><span>From a local sandwich shop to a rolling food truck.</span></div><div class="value"><strong>Signature Sandwiches</strong><br><span>Built around warm meats, crisp toppings, melted cheese, and bold sauces.</span></div><div class="value"><strong>Serving the Community</strong><br><span>Bringing Green Apple flavor to local lunches, events, schools, and festivals.</span></div></div></div></div>
 <div class="archive-actions"><button class="archive-btn" type="button" id="toggle-archive">View More Old Photos</button></div><div class="archive-panel" id="green-apple-archives">
   <h3>The Green Apple Archives</h3>
