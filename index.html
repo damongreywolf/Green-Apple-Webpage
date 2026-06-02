@@ -165,11 +165,72 @@
   }
 }
 
+
+/* Mobile-only Green Apple header revision */
+.mobile-hero-brand{
+  display:none;
+}
+@media (max-width:640px){
+  .mobile-hero-brand{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:14px auto 10px;
+    padding:0 12px;
+    text-align:center;
+  }
+  .mobile-hero-logo{
+    display:block;
+    width:min(82vw, 310px);
+    max-height:185px;
+    object-fit:contain;
+  }
+  .mobile-hero-line{
+    margin:0 auto 4px;
+    font-size:1.08rem;
+    line-height:1.25;
+    color:var(--ink);
+    max-width:340px;
+  }
+  /* Hide duplicate top Book Us button on mobile only */
+  header a[href="#book"],
+  header a[href="#booking"],
+  header a[href="#contact"].book-us,
+  header .book-us,
+  header .btn-book{
+    display:none !important;
+  }
+  /* Keep lower action buttons visible if they are outside the header */
+  main a[href="#book"],
+  main a[href="#booking"],
+  section a[href="#book"],
+  section a[href="#booking"]{
+    display:inline-flex !important;
+  }
+  /* Hide the original logo/card near the bottom of the mobile hero/brand area only */
+  .hero-logo,
+  .logo-card,
+  .brand-card,
+  .hero .logo,
+  .hero img[alt*="logo" i]{
+    display:none !important;
+  }
+}
+
+@media (max-width:640px){.mobile-hide-top-book{display:none!important;}}
 </style>
 </head>
 <body>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodTruck","name":"Green Apple Gourmet Sandwiches","servesCuisine":["Gourmet Sandwiches","American","Food Truck"],"areaServed":["Ringgold","Fort Oglethorpe","Catoosa County","Chattanooga","East Ridge","Ooltewah","Red Bank","Hamilton County"]}</script>
-<header><nav class="wrap"><a href="#home" class="brand"><img class="logo-header" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"><span>Green Apple</span></a><div class="links"><a href="#menu">Menu</a><a href="#route">Route</a><a href="#catering">Catering</a><a href="#social">Social</a><a href="#contact">Contact</a></div><a class="btn red" href="#book">Book Us</a></nav>
+<header><nav class="wrap"><a href="#home" class="brand"><img class="logo-header" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"><span>Green Apple</span></a><div class="links"><a href="#menu">Menu</a><a href="#route">Route</a><a href="#catering">Catering</a><a href="#social">Social</a><a href="#contact">Contact</a></div><a class="mobile-hide-top-book" class="btn red" href="#book">Book Us</a></nav>
+
+<div class="mobile-hero-brand">
+  <img class="mobile-hero-logo" src="green-apple-logo.png" alt="Green Apple Sandwiches logo">
+  <p class="mobile-hero-line"><strong>Gourmet sandwiches with a green apple twist, stacked high, served hot, rolling.</strong></p>
+</div>
+
 <div class="social-buttons" aria-label="Green Apple social media links">
   <!-- SOCIAL LINK PLACEHOLDERS: replace # with your Facebook and Instagram URLs -->
   <a class="social-btn" href="https://www.facebook.com/thegreenappleringgoldgeorgia" target="_blank" rel="noopener">Connect on Facebook</a>
