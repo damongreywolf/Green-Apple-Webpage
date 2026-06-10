@@ -132,30 +132,47 @@
 
 
 .order-online-section{
-  text-align:center;
-  background:rgba(255,255,255,.86);
+  background:var(--cream);
+  border-top:4px solid var(--ink);
+  border-bottom:4px solid var(--ink);
+  padding:70px 0;
+}
+.order-online-card{
+  background:white;
+  border:4px solid var(--ink);
+  border-radius:32px;
+  padding:28px;
+  box-shadow:12px 12px 0 var(--red);
+}
+.easyeats-frame-wrap{
+  margin-top:28px;
   border:4px solid var(--ink);
   border-radius:24px;
-  margin:28px auto;
-  max-width:900px;
-  padding:28px 18px;
-  box-shadow:6px 6px 0 rgba(0,0,0,.16);
+  overflow:hidden;
+  background:#111;
+  box-shadow:8px 8px 0 var(--yellow);
 }
-.order-online-section p{
-  font-weight:700;
+.easyeats-frame-wrap iframe{
+  display:block;
+  width:100%;
+  min-height:420px;
+  border:0;
 }
-
-
-
-
-.btn-order-online{
-  background:var(--cream, #f3d89b) !important;
-  color:var(--ink, #111) !important;
-  border-radius:18px !important;
-  box-shadow:4px 4px 0 rgba(0,0,0,.18) !important;
+.order-online-note{
+  margin-top:18px;
+  text-align:center;
+  color:var(--green);
+  font-weight:800;
+  line-height:1.5;
 }
-.btn-order-online:hover{
-  filter:brightness(1.03);
+@media (max-width:640px){
+  .order-online-card{
+    padding:20px;
+    border-radius:24px;
+  }
+  .easyeats-frame-wrap iframe{
+    min-height:500px;
+  }
 }
 
 </style>
@@ -168,7 +185,7 @@
 </div></nav></header>
 <main>
 <section id="home" class="hero splash"><div class="wrap hero-grid"><div><p class="eyebrow">Serving Northwest Georgia + Hamilton County, TN</p><h1 class="hero-title">Bold gourmet sandwiches with a <span class="accent">Green Apple</span> twist.</h1><p class="lead">Stacked high, served hot, and rolling fresh across Northwest Georgia and Hamilton County.</p><div class="buttons"><a class="btn yellow" href="#menu">View Menu</a>
-          <a class="btn btn-order-online" href="#order-online">Order Online</a><a class="btn green" href="#route">Find the Truck</a><a class="btn red" href="#book">Book Us</a></div></div><div class="logo-frame"><img class="logo-hero" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"></div></div></section>
+          <a class="btn green" href="#route">Find the Truck</a><a class="btn red" href="#book">Book Us</a></div></div><div class="logo-frame"><img class="logo-hero" src="green-apple-logo.png" alt="Green Apple Gourmet Sandwiches logo"></div></div></section>
 <section id="about"><div class="wrap about-grid"><div class="photo-grid"><div class="photo photo-image"><div><img src="restaurant-sign.jpg" alt="Original Green Apple restaurant sign in Ringgold, Georgia" data-lightbox-src="restaurant-sign.jpg" data-lightbox-caption="Original Ringgold Shop"><span class="caption">Original Ringgold shop</span></div></div><div class="photo photo-image"><div><img src="restaurant-dining-room.jpg" alt="Inside the original Green Apple dining room with the community gathered" data-lightbox-src="restaurant-dining-room.jpg" data-lightbox-caption="Inside the dining room"><span class="caption">Inside the dining room</span></div></div><div class="photo photo-image"><div><img src="restaurant-kitchen.jpg" alt="Inside the original Green Apple kitchen" data-lightbox-src="restaurant-kitchen.jpg" data-lightbox-caption="Inside the kitchen"><span class="caption">Inside the kitchen</span></div></div><div class="photo"><div>Photo coming soon:<br>Green Apple on the road</div></div></div><div><div class="heading"><p class="label">About the truck</p><h2>Restaurant roots. Road-ready flavor.</h2><p>Before it was a food truck, Green Apple was a sandwich shop in Ringgold, Georgia — a local spot built on fresh ingredients, warm toasted sandwiches, and flavor combinations people remembered. Now we’re taking those restaurant roots on the road, serving bold gourmet sandwiches across Northwest Georgia and Hamilton County with the same Green Apple twist.</p></div><div class="values"><div class="value"><strong>Born in Ringgold</strong><br><span>From a local sandwich shop to a rolling food truck.</span></div><div class="value"><strong>Signature Sandwiches</strong><br><span>Built around warm meats, crisp toppings, melted cheese, and bold sauces.</span></div><div class="value"><strong>Serving the Community</strong><br><span>Bringing Green Apple flavor to local lunches, events, schools, and festivals.</span></div></div></div></div>
 <div class="archive-actions"><button class="archive-btn" type="button" id="toggle-archive">View More Old Photos</button></div><div class="archive-panel" id="green-apple-archives">
   <h3>The Green Apple Archives</h3>
@@ -259,9 +276,35 @@
 <article class="card"><div class="food"><div><div class="icon">🌯</div><p>Food photo</p></div></div><div class="body"><div class="top"><h3>Santa Fe</h3><span class="price">$13</span></div><p class="desc">Cajun-spiced chicken, sautéed onions, melted Monterey Jack, crisp lettuce, and juicy tomato, all drizzled with bold chipotle sauce, wrapped in a warm tomato basil tortilla.</p><span class="badge">Wrap</span></div></article>
 <article class="card"><div class="food"><div><div class="icon">🥪</div><p>Food photo</p></div></div><div class="body"><div class="top"><h3>Victoria’s Italian</h3><span class="price">$13</span></div><p class="desc">A savory combination of sliced Italian cotto salami, pastrami, and pepperoni, melted provolone, crisp lettuce, fresh tomato, and thinly sliced onions, drizzled with balsamic vinaigrette and mayo on a toasted Kaiser roll.</p><span class="badge">Italian</span></div></article>
 </div></div></section>
-<section id="order-online" class="section order-online-section">
-  <h2>Order Online</h2>
-  <p>Online ordering is coming soon.</p>
+<section id="order-online" class="order-online-section">
+  <div class="wrap">
+    <div class="order-online-card">
+      <div class="heading" style="text-align:center">
+        <p class="label">Order Online</p>
+        <h2>Order online when Green Apple is open.</h2>
+        <p>
+          Use the EasyEats ordering window below to view active service times,
+          check availability, and place an order during scheduled truck service.
+        </p>
+      </div>
+
+      <div class="easyeats-frame-wrap">
+        <iframe
+          title="Green Apple Sandwiches online ordering"
+          src="https://easyeats.com/widgets/schedule/fid/2515?colorScheme=dark"
+          width="100%"
+          height="420"
+          frameborder="0"
+          scrolling="yes"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <p class="order-online-note">
+        Online ordering availability may change by location, event, and service hours.
+      </p>
+    </div>
+  </div>
 </section>
 
 

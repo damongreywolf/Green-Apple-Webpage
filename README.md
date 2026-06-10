@@ -18,3 +18,9 @@ Upload these files to GitHub:
 - green-apple-logo.png
 
 After Vercel redeploys, hard refresh with Ctrl+F5 and test the photo gallery.
+
+
+Update in this version:
+- Removed the hero/top Order Online button.
+- Replaced the temporary Order Online placeholder with the EasyEats ordering iframe.
+- Added Green Apple styled wrapper, border, shadow, mobile height, and note text.
