@@ -24,3 +24,9 @@ Update in this version:
 - Removed the hero/top Order Online button.
 - Replaced the temporary Order Online placeholder with the EasyEats ordering iframe.
 - Added Green Apple styled wrapper, border, shadow, mobile height, and note text.
+
+
+Update in this version:
+- Added Green Apple Club option note: "Make it Classic: substitute turkey for roast beef."
+- Keeps the existing Green Apple Club as the default while showing the traditional turkey option.
+- No public SKU numbers were added to the website. Metro Deli pastrami remains an internal supplier decision.
