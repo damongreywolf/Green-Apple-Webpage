@@ -30,3 +30,17 @@ Update in this version:
 - Added Green Apple Club option note: "Make it Classic: substitute turkey for roast beef."
 - Keeps the existing Green Apple Club as the default while showing the traditional turkey option.
 - No public SKU numbers were added to the website. Metro Deli pastrami remains an internal supplier decision.
+
+
+## 2026-06-24 menu photo update
+Replaced all 8 main website menu sandwich images with the new matching-background photos provided by Damon:
+- The Green Apple
+- The Gobbler
+- The Green Apple Club
+- Chicken Cordon Bleu
+- Uncle Victor’s Sassy Roast Beef
+- The Pastrami Reuben
+- Victoria’s Italian
+- Santa Fe Chicken Wrap
+
+The Green Apple Club option line remains: “Make it Classic: substitute turkey for roast beef.”
