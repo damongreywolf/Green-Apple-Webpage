@@ -44,3 +44,7 @@ Replaced all 8 main website menu sandwich images with the new matching-backgroun
 - Santa Fe Chicken Wrap
 
 The Green Apple Club option line remains: “Make it Classic: substitute turkey for roast beef.”
+
+## October 29, 2026 schedule update
+Only four confirmed stops are listed: October 31 Midtown (4:30–7:30 PM), November 3 Unum (11 AM–3 PM), November 6 Food Truck Friday (11 AM–3 PM), and November 7 The Barn Nursery (11 AM–4 PM). Includes the original festival poster and Google Maps search links for each venue. Barn Nursery uses its name and Chattanooga because no street address was supplied. Existing design, menu, ordering, forms, and gallery are preserved.
+
