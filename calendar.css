@@ -42,6 +42,7 @@
 #route .ga-dialog a{display:inline-block;color:#a80f0f;font-weight:800;text-decoration:underline;margin-top:12px;}
 #route .ga-dialog [hidden]{display:none;}
 #route .ga-close{float:right;}
+#route .ga-mobile-schedule{display:none;}
 @media(max-width:700px){
  #route .ga-masthead{padding:16px;gap:12px;flex-wrap:wrap;justify-content:center;}
  #route .ga-lettering{width:145px;height:110px;}
@@ -52,7 +53,15 @@
  #route .ga-weekdays{font-size:.875rem;}
 }
 @media(max-width:480px){
- #route .ga-grid{display:block;}#route .ga-weekdays{display:none;}
+ #route .ga-grid,#route .ga-weekdays{display:none;}
+ #route .ga-mobile-schedule{display:block;}
+ #route .ga-mobile-note{padding:12px;font-weight:700;border-bottom:1px solid #c5bfa3;}
+ #route .ga-mobile-note:empty{display:none;}
+ #route .ga-mobile-stop{padding:12px;border-bottom:1px solid #c5bfa3;}
+ #route .ga-mobile-date{font-weight:800;}
+ #route .ga-mobile-schedule .ga-event{margin:6px 0 0;}
+ #route .ga-expand{display:block;margin:16px auto;background:#ffd744;}
+ #route .ga-expand[hidden]{display:none;}
  #route .ga-day{display:none;}#route .ga-day.ga-has-events{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 8px;min-height:0;padding:12px;border-right:0;border-bottom:2px solid #111;}
  #route .ga-day.ga-has-events .ga-date{grid-row:1;margin-top:4px;}
  #route .ga-day.ga-outside{display:none;}

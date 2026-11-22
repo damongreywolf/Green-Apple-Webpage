@@ -9,3 +9,5 @@ Passed browser checks against the live public Google Calendar feed: month naviga
 The live endpoint returned nine November grid-range entries (including early December dates in the trailing desktop row). Desktop and mobile screenshots were visually inspected. The public feed was reachable without authentication. Private-event behavior was tested with fixtures; Google may omit private events from its public feed entirely.
 
 No real orders or form submissions were made. No repository changes were pushed. Deployment itself has not been tested; upload to the existing GitHub-connected Vercel project and follow CALENDAR-UPLOAD.md.
+
+Mobile five-stop update: browser fixture with 30 stops confirmed five visible by default, all 30 after View full month, five after Show fewer, and all 30 retained in the desktop grid. Live-feed and original preservation tests were rerun successfully.

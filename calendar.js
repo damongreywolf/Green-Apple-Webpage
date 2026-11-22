@@ -6,6 +6,13 @@
   let month = today.slice(0,7), requestNumber = 0, controller;
   const grid = root.querySelector('.ga-grid'), status = root.querySelector('.ga-status');
   const dialog = root.querySelector('dialog');
+  const mobile = document.createElement('div');
+  mobile.className='ga-mobile-schedule';
+  const mobileList=document.createElement('div');mobileList.id='ga-mobile-stops';mobileList.setAttribute('role','list');
+  const mobileNote=document.createElement('p');mobileNote.className='ga-mobile-note';mobileNote.setAttribute('role','status');
+  const expand=document.createElement('button');expand.type='button';expand.className='ga-button ga-expand';expand.setAttribute('aria-controls',mobileList.id);
+  mobile.append(mobileNote,mobileList,expand);grid.after(mobile);
+  let monthEvents=[],expanded=false;
   const dateKey = date => new Intl.DateTimeFormat('en-CA',{timeZone:zone,year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
   const time = date => new Intl.DateTimeFormat('en-US',{timeZone:zone,hour:'numeric',minute:'2-digit'}).format(date);
   const dateLabel = date => new Intl.DateTimeFormat('en-US',{timeZone:zone,weekday:'long',month:'long',day:'numeric',year:'numeric'}).format(date);
@@ -33,8 +40,31 @@
   }
   function nextDay(key,delta=1){const d=new Date(key+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+delta);return d.toISOString().slice(0,10);}
   const previousDay=key=>nextDay(key,-1);
+  function renderMobile(){
+    mobileList.replaceChildren();
+    const upcoming=monthEvents.filter(e=>e.allDay?e.end>today:new Date(e.end)>new Date());
+    const visible=expanded?monthEvents:upcoming.slice(0,5);
+    mobileNote.textContent=expanded?'All stops in this month.':upcoming.length?`Next ${Math.min(5,upcoming.length)} upcoming stops in this month.`:'No upcoming stops this month. Use Next to see the following month.';
+    for(const event of visible){
+      const row=make('div','ga-mobile-stop');row.setAttribute('role','listitem');
+      const date=eventDates(event).start;
+      row.append(make('p','ga-mobile-date',new Date(date+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'})));
+      const button=make(event.busy?'div':'button','ga-event'+(event.busy?' ga-busy':''));
+      button.append(make('strong','',event.busy?'Busy':event.title),make('time','',eventTime(event)));
+      if(!event.busy){button.type='button';button.addEventListener('click',()=>openEvent(event,button));}
+      row.append(button);mobileList.append(row);
+    }
+    expand.hidden=!expanded&&monthEvents.length===visible.length;
+    expand.textContent=expanded?'Show fewer':'View full month';expand.setAttribute('aria-expanded',String(expanded));
+  }
+  expand.addEventListener('click',()=>{
+    expanded=!expanded;renderMobile();
+    if(!expanded)root.scrollIntoView({behavior:'instant',block:'start'});
+  });
   function render(events) {
     grid.replaceChildren();
+    monthEvents=events.filter(e=>{const d=eventDates(e);return d.start.slice(0,7)<=month&&(e.allDay?previousDay(d.end):d.end).slice(0,7)>=month;}).sort((a,b)=>a.start.localeCompare(b.start));
+    expanded=false;renderMobile();
     const [year,m]=month.split('-').map(Number), first=new Date(Date.UTC(year,m-1,1,12));
     const total=new Date(Date.UTC(year,m,0)).getUTCDate();
     const cells=Math.ceil((first.getUTCDay()+total)/7)*7;
@@ -62,7 +92,7 @@
   async function load() {
     const id=++requestNumber;if(controller)controller.abort();controller=new AbortController();
     root.querySelector('[data-month]').textContent=new Date(month+'-15T12:00:00Z').toLocaleDateString('en-US',{month:'long',year:'numeric',timeZone:'UTC'});
-    status.classList.remove('ga-error');status.textContent='Loading live schedule…';grid.setAttribute('aria-busy','true');grid.replaceChildren();
+    status.classList.remove('ga-error');status.textContent='Loading live schedule…';grid.setAttribute('aria-busy','true');grid.replaceChildren();mobileList.replaceChildren();mobileNote.textContent='';expand.hidden=true;
     try{
       const response=await fetch('api/calendar?month='+month,{signal:controller.signal});
       if(!response.ok)throw new Error('Schedule unavailable');
