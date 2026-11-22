@@ -251,6 +251,8 @@
 .green-apple-calendar-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;padding:18px 20px 26px}
 @media(max-width:640px){.green-apple-calendar-shell{border-radius:18px;box-shadow:5px 5px 0 var(--red)}.green-apple-calendar-bar{padding:12px 14px;font-size:1.05rem}.green-apple-calendar-frame{height:570px}.green-apple-calendar-note{padding:12px 14px 0;font-size:.9rem}.green-apple-calendar-actions{padding:16px 14px 22px}.green-apple-calendar-actions .btn{width:100%}}
 </style>
+<link rel="stylesheet" href="calendar.css">
+<script src="calendar.js" defer></script>
 </head>
 <body>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodTruck","name":"Green Apple Gourmet Sandwiches","servesCuisine":["Gourmet Sandwiches","American","Food Truck"],"areaServed":["Northwest Georgia","Chattanooga","Surrounding Areas","Festivals","Events"]}</script>
@@ -391,23 +393,37 @@
       <h2>Where to Find The Green Apple</h2>
       <p style="margin-left:auto;margin-right:auto">Browse our live monthly schedule for upcoming stops, service times, and locations. Tap an event for details and directions. All times Eastern.</p>
     </div>
-    <div class="green-apple-calendar-shell">
-      <div class="green-apple-calendar-bar">
-        <span>Our Monthly Schedule</span>
-        <span class="green-apple-calendar-live">Updated from Google Calendar</span>
+    <div class="ga-calendar" id="ga-calendar">
+      <div class="ga-masthead">
+        <img class="ga-lettering" src="calendar-assets/green-apple-lettering.png" alt="Green Apple" width="230" height="155" loading="lazy">
+        <div class="ga-masthead-copy"><strong>Fresh stops.<br>Bold sandwiches.</strong><span>Our monthly food truck schedule</span></div>
       </div>
-      <iframe
-        class="green-apple-calendar-frame"
-        title="Green Apple food truck monthly schedule"
-        src="https://calendar.google.com/calendar/embed?src=c_db3603520df867dbe682a2586e6c7b0a0d377f070e0289ec2a7238141104c5ed%40group.calendar.google.com&amp;ctz=America%2FNew_York&amp;mode=MONTH&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;bgcolor=%23fff7d6"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        scrolling="no"></iframe>
-      <p class="green-apple-calendar-note">Select a date or event to view details. Events marked private may appear as “Busy” without their details. Schedules can change due to weather or event updates.</p>
-      <div class="green-apple-calendar-actions">
-        <a class="btn green" href="https://calendar.google.com/calendar/embed?src=c_db3603520df867dbe682a2586e6c7b0a0d377f070e0289ec2a7238141104c5ed%40group.calendar.google.com&amp;ctz=America%2FNew_York" target="_blank" rel="noopener noreferrer">Open Full Calendar</a>
-        <a class="btn yellow" href="https://www.facebook.com/thegreenappleringgoldgeorgia" target="_blank" rel="noopener noreferrer">Follow Route Updates</a>
+      <div class="ga-toolbar">
+        <h3 data-month aria-live="polite">Monthly schedule</h3>
+        <div class="ga-controls" aria-label="Calendar controls">
+          <button class="ga-button" type="button" data-shift="-1" aria-label="Previous month">Prev</button>
+          <button class="ga-button ga-today-button" type="button" data-today>This month</button>
+          <button class="ga-button" type="button" data-shift="1" aria-label="Next month">Next</button>
+          <button class="ga-button" type="button" data-refresh>Refresh</button>
+        </div>
       </div>
+      <p class="ga-status" role="status">Loading live schedule…</p>
+      <div class="ga-weekdays" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      <div class="ga-grid" role="list" aria-label="Monthly food truck schedule" aria-busy="true"></div>
+      <div class="ga-footer">
+        <div class="ga-legend"><span>Public stop — tap for details</span><span>Busy — private booking</span></div>
+        <p>Updated from Google Calendar. All times Eastern. Stops may change with weather or event updates. On small screens, scheduled dates appear as a monthly list.</p>
+        <noscript><p>Enable JavaScript to view the custom schedule, or use Open Full Calendar below.</p></noscript>
+        <div class="ga-actions">
+          <a href="https://calendar.google.com/calendar/embed?src=c_db3603520df867dbe682a2586e6c7b0a0d377f070e0289ec2a7238141104c5ed%40group.calendar.google.com&amp;ctz=America%2FNew_York" target="_blank" rel="noopener noreferrer">Open Full Calendar</a>
+          <a href="https://www.facebook.com/thegreenappleringgoldgeorgia" target="_blank" rel="noopener noreferrer">Follow Route Updates</a>
+        </div>
+      </div>
+      <dialog class="ga-dialog" aria-labelledby="ga-event-title">
+        <button class="ga-button ga-close" type="button">Close</button>
+        <h3 id="ga-event-title"></h3><p data-event-time></p><p data-event-location></p><p data-event-description></p>
+        <a data-event-map target="_blank" rel="noopener noreferrer" hidden>Get directions</a>
+      </dialog>
     </div>
   </div>
 </section>

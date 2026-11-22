@@ -1,0 +1,7 @@
+{
+  "name": "green-apple-website",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test tests/*.test.mjs", "dev": "node scripts/preview.mjs"},
+  "dependencies": {"ical.js": "2.2.1"}
+}
